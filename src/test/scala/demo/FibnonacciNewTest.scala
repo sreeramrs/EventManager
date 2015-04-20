@@ -2,9 +2,15 @@ package demo
 
 import org.scalatest.FunSuite
 
-/**
- * Created by binu on 4/20/15.
- */
-class FibnonacciNewTest extends FunSuite {
 
+class FibnonacciNewTest extends FunSuite {
+  test("Test Non Recessive ") {
+    var fib = new FibnonacciNew
+    println("Recessive=" + fib.fib(5))
+
+  }
+  test("Test  Recessive ") {
+    var fib = new FibnonacciNew
+    println("Non Recessive=" + fib.fibRec(5))
+  }
 }
